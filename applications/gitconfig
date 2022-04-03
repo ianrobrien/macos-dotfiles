@@ -60,6 +60,6 @@
 [init]
 	defaultBranch = main
 [url "git@ssh.dev.azure.com:v3/coopnorge/"]
-   insteadOf = https://dev.azure.com/coopnorge/
+    insteadOf = https://dev.azure.com/coopnorge/
 [url "ssh://git@github.com/coopnorge/"]
-  insteadOf = https://github.com/coopnorge/
+    insteadOf = https://github.com/coopnorge/
