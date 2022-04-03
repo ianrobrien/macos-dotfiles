@@ -1,0 +1,63 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- clean: ['~']
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
+
+- create:
+    - ~/Develop
+
+- create:
+    ~/.ssh:
+      mode: 0700
+
+- link:    
+    ########################################
+    # Application Settings
+    ########################################
+    ~/.config/git/ignore:
+        path: applications/gitignore
+    ~/.gitconfig:
+        path: applications/gitconfig
+    ~/.npmrc:
+        path: applications/npmrc
+    ~/.vimrc:
+        path: applications/vimrc
+    # JetBrains IDE launchers
+    ~/.local/bin:
+        glob: true
+        path: local/bin
+    # Visual Studio Code user settings
+    "$HOME/Library/Application Support/Code/User/settings.json":
+        if: '[ -d "$HOME/Library/Application Support/Code/User/" ]'
+        force: true
+        path: applications/vscode/settings.json
+    ########################################
+    # Shell Settings
+    ########################################
+    ~/.raspberrypi-motd.sh:
+        if: '[ $(uname -m) == armv7l ]'
+        path: shell/raspberrypi-motd.sh
+    ~/.config/starship.toml:
+        path: shell/starship.toml
+    ~/.config/fish:
+        glob: true
+        path: shell/fish/*
+    ~/.zshrc:
+        path: shell/zsh/zshrc
+    ~/.zprofile:
+        path: shell/zsh/zprofile
+    ~/.zsh/custom/:
+        glob: true
+        path: shell/zsh/custom/*
+
+- shell:
+  - touch ~/.hushlogin
+  - [git submodule update --init --recursive, Installing submodules]

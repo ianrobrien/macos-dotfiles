@@ -1,0 +1,65 @@
+[alias]
+    bd = branch -D
+    cam = commit -am
+    co = checkout
+    cob = checkout -b
+    discard = checkout --
+    fpo = fetch --prune origin
+    lb = branch -l
+    rhh = reset --hard HEAD
+    s = status
+    squish = rebase -i HEAD~2
+    unstage = reset
+[color]
+    branch = auto
+    diff = auto
+    interactive = true
+    status = auto
+	ui = true
+[color "diff"]
+	new = green bold
+	old = red bold
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[commit]
+    gpgSign = true
+[core]
+    # autocrlf = input
+    # autocrlf = true
+    whitespace = cr-at-eol
+    pager = diff-so-fancy | less --tabs=4 -RFX
+    # pager = cat
+    editor = vim	
+[help]
+    autocorrect = 15
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[log]
+    decorate = short
+    showSignature = true
+[merge]
+    conflictStyle = diff3
+[pager]
+	branch = false
+[pull]
+	rebase = false
+[tag]
+	gpgSign = true
+[user]
+    name = "Ian Robert O'Brien"
+    email = 13039736+ianrobrien@users.noreply.github.com
+    signingkey = 9FC93BF1D0D046F5
+[init]
+	defaultBranch = main
+[url "git@ssh.dev.azure.com:v3/coopnorge/"]
+   insteadOf = https://dev.azure.com/coopnorge/
+[url "ssh://git@github.com/coopnorge/"]
+  insteadOf = https://github.com/coopnorge/
