@@ -54,5 +54,8 @@
     "editor.codeLens": false,
     "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true
 }
