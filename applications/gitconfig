@@ -37,9 +37,13 @@
     whitespace = cr-at-eol
     pager = diff-so-fancy | less --tabs=4 -RFX
     # pager = cat
-    editor = vim	
+    editor = vim
+[fetch]
+	prune = true
 [help]
     autocorrect = 15
+[init]
+	defaultBranch = main
 [interactive]
 	diffFilter = diff-so-fancy --patch
 [log]
@@ -53,13 +57,11 @@
 	rebase = false
 [tag]
 	gpgSign = true
-[user]
-    name = "Ian Robert O'Brien"
-    email = 13039736+ianrobrien@users.noreply.github.com
-    signingkey = 9FC93BF1D0D046F5
-[init]
-	defaultBranch = main
 [url "git@ssh.dev.azure.com:v3/coopnorge/"]
     insteadOf = https://dev.azure.com/coopnorge/
 [url "ssh://git@github.com/coopnorge/"]
     insteadOf = https://github.com/coopnorge/
+[user]
+    name = "Ian Robert O'Brien"
+    email = 13039736+ianrobrien@users.noreply.github.com
+    signingkey = 9FC93BF1D0D046F5

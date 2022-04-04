@@ -1,3 +1,3 @@
 function git_tidy
-    git branch --merged | egrep -v "(^\*|master|main)" | xargs git branch -d
+    git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
 end
