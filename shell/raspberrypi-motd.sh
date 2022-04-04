@@ -24,4 +24,3 @@ echo "$(tput setaf 2)
    '~ .~~~. ~'    IP Addresses.......: `/sbin/ifconfig eth0 | /bin/grep -w "inet" | /usr/bin/cut -d ' ' -f 10` (internal) | `wget -q -O - http://icanhazip.com/ | tail` (external)
        '~'
 $(tput sgr0)"
-
