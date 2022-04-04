@@ -18,7 +18,7 @@
     ~/.ssh:
       mode: 0700
 
-- link:    
+- link:
     ########################################
     # Application Settings
     ########################################
@@ -36,27 +36,16 @@
         path: local/bin
     # Visual Studio Code user settings
     "$HOME/Library/Application Support/Code/User/settings.json":
-        if: '[ -d "$HOME/Library/Application Support/Code/User/" ]'
         force: true
         path: applications/vscode/settings.json
     ########################################
     # Shell Settings
     ########################################
-    ~/.raspberrypi-motd.sh:
-        if: '[ $(uname -m) == armv7l ]'
-        path: shell/raspberrypi-motd.sh
     ~/.config/starship.toml:
         path: shell/starship.toml
     ~/.config/fish:
         glob: true
         path: shell/fish/*
-    ~/.zshrc:
-        path: shell/zsh/zshrc
-    ~/.zprofile:
-        path: shell/zsh/zprofile
-    ~/.zsh/custom/:
-        glob: true
-        path: shell/zsh/custom/*
 
 - shell:
   - touch ~/.hushlogin
