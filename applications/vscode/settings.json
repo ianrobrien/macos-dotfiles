@@ -53,5 +53,6 @@
     "security.workspace.trust.untrustedFiles": "open",
     "editor.codeLens": false,
     "explorer.compactFolders": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "redhat.telemetry.enabled": false
 }
