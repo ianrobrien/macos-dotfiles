@@ -25,14 +25,7 @@
             "path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin/",
             "sources": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip",
             "javadoc": "https://docs.oracle.com/javase/8/docs/api/"
-          },
-          {
-            "name": "AdoptOpenJDK 11.0.7",
-            "path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/",
-            "sources" : "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/lib/src.zip",
-            "javadoc" : "https://docs.oracle.com/en/java/javase/11/docs/api",
-            "default":  true
-           }
+          }
     ],
     "python.languageServer": "Pylance",
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -57,5 +50,8 @@
     "redhat.telemetry.enabled": false,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
 }
