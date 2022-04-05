@@ -23,7 +23,7 @@ symbol = " "
 symbol = " "
 
 [gcloud]
-disabled = true
+disabled = false
 
 [golang]
 symbol = " "
